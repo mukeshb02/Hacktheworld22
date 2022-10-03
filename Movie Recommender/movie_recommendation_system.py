@@ -63,13 +63,9 @@ if __name__ == '__main__':
 	emotion = input("Enter the emotion: ")
 	a = main(emotion)
 	count = 0
-
-	if(emotion == "disgust" or emotion == "anger"
-						or emotion=="surprise"):
-
+    
+	if(emotion in ["Disgust", "Anger", "Surprise"]):
 		for i in a:
-
-		
 			tmp = str(i).split('>;')
 
 			if(len(tmp) == 3):
