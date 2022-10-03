@@ -8,5 +8,5 @@ A month-long celebration from October 1st - 31st sponsored by Digital Ocean and 
 
 ## What can You contribute ⚠️
 
-You can contribute any of your coding program here as a pr.
+You can contribute any of your valid coding program here as a pr.
 
