@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <div>
+        <h3>When you click on the following button,it will disappear</h3>
+        <button id="bId">Click Me !</button>
+    </div>
+
+    <hr>
+
+    <div>
+        <h3>When you double click on the following button,it will disappear</h3>
+        <button id="dbId">Click Me !</button>
+    </div>
+
+    <div>
+        <h3>When your mouse enters following paragraph it will change its color</h3>
+        <p id="pid2">Mouse entered or leaved</p>
+    </div>
+
+    <hr>
+
+
+
+
+
+
+
+
+
+    <!-- <p id="pid">This is a paragraph</p> -->
+    <script>
+        //Ajax function for the paragraph
+        $(document).ready(function(){
+            $('#pid').click(function(){
+            alert('Clicked the paragraph!!');
+            });
+        });
+        
+
+        //JavaScript function
+        // document.getElementById('pid').onclick = function(){
+        //     alert('Clicked the paragraph!!');
+        // }
+
+
+
+        //Ajax functions for the dev 
+        $(document).ready(function(){
+
+            $('#bId').click(function(){
+                $(this).hide();
+            });
+
+            $('#dbId').dbclick(function(){
+                $(this).hide();
+            });
+
+            $('#pid1').hover(function(){
+                $(this).css('background-color','pink');
+            });
+
+            $('#pid2').mouseenter:(function(){
+                $(this).css("background-color","cyan");
+            });
+            $('#pid2').mouseleave(function(){
+                $(this).css('background-color','yellow');
+            });
+
+        });
+    </script>
+</body>
+</html>
