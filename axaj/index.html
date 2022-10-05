@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1>Animal World</h1>
+
+    <p><h2>Cats</h2></p>
+    <img src="cat.jpg" alt="Cat image" style="width:200px;">
+
+    <div><p>Cat isone of the cutest pet.They look very attractive and most of the people 
+        like their meow sound.
+
+    </p></div>
+
+    <button id="button1">More Information</button>
+
+    <div id="div1"></div>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $.ajax('moreinfo.html',{
+                    success:function(result){
+                        $('#div1').append(result);
+                        $('#button1').hide();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
