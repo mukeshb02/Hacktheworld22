@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <button type="button" class="hidebtn">Hide</button>
+    <button type="button" class="showbtn">Show</button>
+    <button type="button" class="togglebtn">Toggle</button>
+
+    <hr>
+
+    <p class="pfast">This paragraph will show/hide with fast speed</p>
+    <p class="pslow">This paragraph will show/hide with slow speed</p>
+    <p class="pclass">This paragraph will show/hide with very 2000ms</p>
+
+    <hr>
+
+    <button type="button" class="fadeoutbtn">Fade In</button>
+    <button type="button" class="fadeinbtn">Fade Out</button>
+    <button type="button" class="togglebtn1">Toggle</button>
+    <button type="button" class="fadetobtn">Fade To</button>
+
+    <hr>
+
+    <p class="pfast1">This paragraph will fadeIn/fadeOut with fast speed</p>
+    <p class="pslow2">This paragraph will fadeIn/fadeOutslow speed</p>
+    <p class="pclass3">This paragraph will fadeIn/fadeOut very 2000ms</p>
+
+
+    <script>
+        $(document).ready(function(){
+            $(".hidebtn").click(function(){
+                $("p.pfast").hide("fast");
+                $("p.pslow").hide("slow");
+                $("p.pclass").hide(2000);
+            });
+
+            $(".showbtn").click(function(){
+                $("p.pfast").show("fast");
+                $("p.pslow").show("slow");
+                $("p.pclass").show(2000);
+            });
+
+            $(".togglebtn").click(function(){
+                $("p.pfast").toggle("fast");
+                $("p.pslow").toggle("slow");
+                $("p.pclass").toggle(2000);
+            });
+        });
+
+            //fadein fade outs functions
+            $(document).ready(function(){
+
+            $(".fadeoutbtn").click(function(){
+                $("p.pfast1").fadeout("fast");
+                $("p.pslow2").fadeout("slow");
+                $("p.pclass3").fadeout(2000);
+            });
+
+            $(".fadeinbtn").click(function(){
+                $("p.pfast1").fadein("fast");
+                $("p.pslow2").fadein("slow");
+                $("p.pclass3").fadein(2000);
+            });
+
+            $(".fadeinbtn1").click(function(){
+                $("p.pfast1").toggle("fast");
+                $("p.pslow2").toggle("slow");
+                $("p.pclass3").toggle(2000);
+            });
+        });
+    </script>
+
+</body>
