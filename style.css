@@ -1,0 +1,30 @@
+.nav{
+    background-color: rgb(212, 199, 215);
+}
+
+/* .navbar-nav{
+    margin-left: 100px;
+} */
+
+.cards{
+    display: inline;
+}
+.card-01{
+    text-align: center;
+}
+
+.table{
+    align-items: center;
+}
+
+/* .form{
+    margin: 100px;
+} */
+
+.about{
+    margin: 60px;
+}
+
+.w3-container{
+    align-items: center;
+}
